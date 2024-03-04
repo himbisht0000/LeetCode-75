@@ -1,0 +1,68 @@
+class Solution {
+public:
+    bool compare(string A, string B, int length)
+    {
+        int i,j;
+        j = 0;
+        while(j < A.length())
+        {
+            for( i = 0;i<length;i++)
+            {
+                if(B[i] != A[j])
+                {
+                 return false;
+                }
+                j++;
+            }
+        }   
+
+        return true;
+    }
+    string gcdOfStrings(string str1, string str2) {
+        
+        int len1,len2;
+        string gcd;
+        bool ans;
+        len1 = str1.length();
+        len2 = str2.length();
+
+        for(int i = 1 ; i <= min(len1,len2) ; i++)
+        {   
+            string temp;
+            if( max(len1,len2) % i  == 0 && min(len1,len2) % i == 0)
+            {
+                if(len1 > len2)
+                {
+                    ans = compare(str1,str2,i);
+                    if( ans )
+                    {   
+                        
+                        temp = str2.substr(0,i);
+                        if( compare(str2,temp,temp.length()) )
+                        {
+                            gcd = temp;
+                        }
+                        
+                    }
+                }
+                else
+                {
+                    ans = compare(str2,str1,i);
+                    if( ans )
+                    {
+                        temp = str1.substr(0,i);
+                        if( compare(str1,temp,temp.length()) )
+                        {
+                            gcd = temp;
+                        }
+                        
+                    }
+                }
+            }
+
+            
+        }
+
+        return gcd;
+    }
+};
