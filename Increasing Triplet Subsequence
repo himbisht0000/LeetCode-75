@@ -1,0 +1,29 @@
+class Solution {
+public:
+    bool increasingTriplet(vector<int>& nums) 
+    {
+        int small_1 = INT_MAX,small_2 = INT_MAX;
+        
+        for(int i = 0; i < nums.size(); i++)
+        {
+            //do not replace >= with > beacuse if number is equal 
+            //it should get consumed here only
+            if(small_1 >= nums[i])
+            {
+                small_1 = nums[i];
+            }
+            else if(small_2 >= nums[i])
+            {
+                small_2 = nums[i];
+            }
+            else 
+            {
+                // if small_1 and small_2 already contain small value then 
+                // we have found the triplet
+                return true;
+            }
+        }
+
+        return false;
+    }
+};
