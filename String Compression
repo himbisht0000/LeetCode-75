@@ -1,0 +1,55 @@
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        char current_char;
+        int count = 0;
+        int i =0 ,j = 0;
+        for(; i < chars.size() ; i++ )
+        {
+            if(i==0)
+            {
+                current_char = chars[i];
+                count = 1;
+                continue;
+            }
+            
+            if(chars[i] == current_char)
+            {
+                count++;
+                continue;
+            }
+            else
+            {
+                chars[j] = current_char;
+                j++;
+                if(count > 1)
+                {   int start = j;
+                    while(count)
+                    {
+                        chars[j] = count%10 + 48 ;
+                        count/=10;
+                        j++;
+                        reverse(chars.begin() + start ,chars.begin() + j );
+                    }
+                }
+                current_char = chars[i];
+                count = 1;
+            }
+        }
+        chars[j] = current_char;
+        j++;
+        if(count > 1)
+        {   int start = j;
+            while(count)
+            {
+                chars[j] = count%10 + 48 ;
+                count/=10;
+                j++;
+                reverse(chars.begin() + start,chars.begin() + j );
+            }
+        }
+
+        cout<<" j "<<j;
+        return j;
+    }
+};
