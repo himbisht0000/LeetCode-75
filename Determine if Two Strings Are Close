@@ -1,0 +1,60 @@
+class Solution {
+public:
+    bool closeStrings(string word1, string word2) {
+        map < char , int > data1,data2;
+        if( word1.length() != word2.length() )
+        {
+            return false;
+        }
+
+        int xor_value = 0;
+
+        for(int i=0; i < word1.length(); i++)
+        {
+            // store count of characters for word 1 in data1 map
+            if(data1.find(word1[i]) == data1.end())
+            {
+                data1[word1[i]] = 1;
+            }
+            else
+            {
+                data1[word1[i]]++;
+            }
+
+            // store count of characters for word 2 in data2 map
+            if(data2.find(word2[i]) == data2.end())
+            {
+                data2[word2[i]] = 1;
+            }
+            else
+            {
+                data2[word2[i]]++;
+            }
+
+        }
+        if(data1.size() != data2.size())
+        {
+            return false;
+        }
+        vector<int> count_1,count_2;
+        for(auto i = data1.begin() ; i != data1.end() ; i++ )
+        {
+            if(data2.find(i->first) == data2.end())
+            {
+                return false;
+            }
+
+            count_1.push_back(data1[i->first]);
+            count_2.push_back(data2[i->first]);
+        }
+
+        sort(count_1.begin(),count_1.end());
+        sort(count_2.begin(),count_2.end());
+        for(int i = 0 ; i < count_1.size() ;i++)
+        {
+            if(count_1[i] != count_2[i])
+            return false;
+        }
+        return true;
+    }
+};
