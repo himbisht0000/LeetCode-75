@@ -10,8 +10,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75">Increasing Triplet Subsequence</a></li>
   <li> <a href = "https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75">String Compression</a></li>
   <li> <a href = "https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75">Determine if Two Strings Are Close</a></li>
-  
-  
+  <li> <a href = " https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75">Move Zeroes</a></li>
+ 
   
   
   
