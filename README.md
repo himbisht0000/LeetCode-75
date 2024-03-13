@@ -12,8 +12,9 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75">Determine if Two Strings Are Close</a></li>
   <li> <a href = "https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75">Move Zeroes</a></li>
   <li> <a href = "https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75">Container With Most Water</a></li>
-   <li> <a href = "https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75">Max Number of K-Sum Pairs</a></li>
-   <li> <a href = "https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Average Subarray I</a></li>
+  <li> <a href = "https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75">Max Number of K-Sum Pairs</a></li>
+  <li> <a href = "https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Average Subarray I</a></li>
+  <li> <a href = "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Number of Vowels in a Substring of Given Length</a></li>
   
   
   
