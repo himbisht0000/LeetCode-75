@@ -1,0 +1,18 @@
+class Solution {
+public:
+    string gcdOfStrings(string str1, string str2) {
+        
+        int gcd_len = 0;
+        
+        //checkif gcd exists or not
+        if( (str1+str2) != (str2+str1) )
+        {
+            return "";
+        }
+
+        //fidn the length of string which is gcd of the length of both string
+        gcd_len = gcd(str1.length() , str2.length());
+
+        return str1.substr(0,gcd_len);
+    }
+};
