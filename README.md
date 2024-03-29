@@ -18,6 +18,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/max-consecutive-ones-iii/description/?envType=study-plan-v2&envId=leetcode-75">Max Consecutive Ones III</a></li>
   <li> <a href = "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/?envType=study-plan-v2&envId=leetcode-75">Longest Subarray of 1's After Deleting One Element</a></li>
   <li> <a href = "https://leetcode.com/problems/removing-stars-from-a-string/submissions/1217478346/?envType=study-plan-v2&envId=leetcode-75">Removing Stars From a String</a></li>
+  <li> <a href = "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=study-plan-v2&envId=leetcode-75">Delete the Middle Node of a Linked List</a></li>
   
   
   
