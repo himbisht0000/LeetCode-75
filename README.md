@@ -21,6 +21,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=study-plan-v2&envId=leetcode-75">Delete the Middle Node of a Linked List</a></li>
   <li> <a href = "https://leetcode.com/problems/odd-even-linked-list/description/?envType=study-plan-v2&envId=leetcode-75">Odd Even Linked List</a></li>
   <li> <a href = "https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Depth of Binary Tree</a></li>
+  <li> <a href = "https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">Count Good Nodes in Binary Tree</a></li>
+  
  
   
 
