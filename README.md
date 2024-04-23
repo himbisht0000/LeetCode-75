@@ -24,6 +24,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">Count Good Nodes in Binary Tree</a></li>
   <li> <a href = "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">Longest ZigZag Path in a Binary Tree</a></li>
   <li> <a href = "https://leetcode.com/problems/search-in-a-binary-search-tree/description/?envType=study-plan-v2&envId=leetcode-75">Search in a Binary Search Tree</a></li>
+  <li> <a href = "https://leetcode.com/problems/implement-trie-prefix-tree/submissions/1239938505/?envType=study-plan-v2&envId=leetcode-75">Implement Trie</a></li>
   
  
   
