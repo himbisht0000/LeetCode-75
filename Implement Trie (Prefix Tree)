@@ -1,0 +1,115 @@
+class Trie_node
+{
+    public:
+    bool is_word;
+    Trie_node* alpha[26];
+
+    bool contains_char(char ch)
+    {
+        return ( alpha[ ch - 'a'] != NULL );
+    }
+
+    Trie_node* next_link(char ch)
+    {
+        return alpha[ch - 'a'];
+    }
+
+    void put_char(char ch)
+    {
+        Trie_node* new_node = NULL;
+        new_node = new Trie_node();
+        new_node->is_word = false;
+        alpha[ ch - 'a'] = new_node;
+    }
+
+    void end()
+    {
+        is_word = true;
+    }
+
+    void print_alpha()
+    {
+        for(int i = 0; i < 26 ;i++)
+        {
+            if(alpha[i] != NULL)
+            {
+                cout<<(char)('a' + i)<<" ";
+            }
+            else
+            {
+                cout<<alpha[i]<<" ";
+            }
+        }
+        cout<<endl;
+    }
+
+};
+
+class Trie {
+    
+public:
+    Trie_node* root;
+    Trie() {
+        root = new Trie_node();
+        root->is_word = false;
+    }
+    
+    void insert(string word) {
+       Trie_node* node = root;
+       for(int i=0; i < word.length(); i++)
+       {
+            if(false == node->contains_char(word[i]))
+            {
+                node->put_char(word[i]);  
+                //cout<<word[i]<<endl;
+                //node->print_alpha();
+            }
+            node = node->next_link(word[i]);
+       }
+
+        //ode->print_alpha();
+       node->end();
+    }
+    
+    bool search(string word) {
+        
+        Trie_node *node = root;
+        for(int i = 0 ; i < word.length(); i++)
+        {   
+            //node->print_alpha();
+            if( node == NULL || false == node->contains_char(word[i]) )
+            {
+                return false;
+            }
+            node =  node->next_link(word[i]);
+            //cout<<"ok--"<<endl;
+        }
+        if(node != NULL && node->is_word == true)
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    bool startsWith(string prefix) {
+         Trie_node *node = root;
+        for(int i = 0 ; i < prefix.length(); i++)
+        {
+            if( node == NULL || false == node->contains_char(prefix[i]) )
+            {
+                return false;
+            }
+            node =  node->next_link(prefix[i]);
+        }
+
+        return true;
+    }
+};
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie* obj = new Trie();
+ * obj->insert(word);
+ * bool param_2 = obj->search(word);
+ * bool param_3 = obj->startsWith(prefix);
+ */
