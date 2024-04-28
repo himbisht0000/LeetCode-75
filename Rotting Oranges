@@ -1,0 +1,71 @@
+class Solution {
+public:
+    int orangesRotting(vector<vector<int>>& grid) {
+        
+        queue< pair < pair<int,int>,int > > q;  
+        vector< pair<int,int> > dir;
+        int fresh_to_rotten = 0;
+        int fresh_oranges = 0;
+        int time = 0;
+        int row = grid.size();
+        int col = grid[0].size();
+
+        dir.push_back(make_pair(-1,0)); // top
+        dir.push_back(make_pair(0,1));  // right
+        dir.push_back(make_pair(1,0));  // bottom
+        dir.push_back(make_pair(0,-1)); // left
+
+        //add all the rotten oranges to the queue
+        for(int i = 0; i < grid.size() ; i++)
+        {
+            for(int j = 0; j < grid[0].size() ; j++)
+            {
+                if(grid[i][j] == 2)
+                {
+                    q.push(make_pair(make_pair(i,j) , 0));
+                }
+                else if(grid[i][j] == 1)
+                {
+                    fresh_oranges++;
+                }
+            }
+        }
+
+        while(!q.empty())
+        {
+            pair< pair<int,int>,int> current;
+            // pick front element from the queue
+            current = q.front();
+            time = max(time,current.second);
+            q.pop();
+
+            // traverse through all the neighbour of the current node
+            for(int i = 0 ; i < 4 ; i++)
+            {
+                int x = current.first.first + dir[i].first;
+                int y = current.first.second + dir[i].second;
+
+                if(x>=0 && x<row && y>=0 && y<col && grid[x][y] == 1)
+                {
+                    pair< pair<int,int>,int> temp;
+                    temp.first.first = x;
+                    temp.first.second = y;
+                    grid[x][y] = 2; // convert ornages to rotten
+                    temp.second = current.second + 1; // adding one minute
+                    q.push(temp); // add to queue
+                    fresh_to_rotten++;
+                }
+            }
+
+        }
+        
+        cout<<"fresh to rotten  "<<fresh_to_rotten<<endl;
+        cout<<" fresh "<<fresh_oranges<<endl;
+        if( fresh_to_rotten != fresh_oranges )
+        {
+            return -1;
+        }
+
+        return time;
+    }
+};
