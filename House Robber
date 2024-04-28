@@ -1,0 +1,29 @@
+class Solution {
+public:
+    
+    int prev_max(vector<int> nums ,  int index)
+    {
+        int ans  = 0;
+        // check for all previous house except adjacent house
+        for(int i = 0 ; i <  index - 1 ; i++)
+        {
+            ans = max(ans, nums[i]);
+        }
+
+        return ans;
+    }
+    int rob(vector<int>& nums) {
+        
+        int answer = 0;
+
+        for( int i = 0 ; i < nums.size() ; i++)
+        {
+            // check all the house before current and fix house with max value
+            nums[i] = nums[i] + prev_max(nums , i); 
+            // store max value found till now
+            answer = max(nums[i], answer);
+        }
+
+        return answer;
+    }
+};
