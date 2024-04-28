@@ -28,6 +28,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/search-suggestions-system/description/?envType=study-plan-v2&envId=leetcode-75">Search Suggestion System</a></li>
   <li> <a href = "https://leetcode.com/problems/rotting-oranges/description/?envType=study-plan-v2&envId=leetcode-75">Rotting Oranges</a></li>
   <li> <a href = "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/?envType=study-plan-v2&envId=leetcode-75">Minimum Flips to Make a OR b Equal to c</a></li>
+  <li> <a href = "https://leetcode.com/problems/n-th-tribonacci-number/description/?envType=study-plan-v2&envId=leetcode-75"> N-th Tribonacci Number</a></li>
  
   
  
