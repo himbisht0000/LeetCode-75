@@ -26,6 +26,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/search-in-a-binary-search-tree/description/?envType=study-plan-v2&envId=leetcode-75">Search in a Binary Search Tree</a></li>
   <li> <a href = "https://leetcode.com/problems/implement-trie-prefix-tree/submissions/1239938505/?envType=study-plan-v2&envId=leetcode-75">Implement Trie</a></li>
   <li> <a href = "https://leetcode.com/problems/search-suggestions-system/description/?envType=study-plan-v2&envId=leetcode-75">Search Suggestion System</a></li>
+  <li> <a href = "https://leetcode.com/problems/rotting-oranges/description/?envType=study-plan-v2&envId=leetcode-75">Search Suggestion System</a></li>
  
   
  
