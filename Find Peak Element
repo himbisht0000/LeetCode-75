@@ -1,0 +1,31 @@
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int left , right , mid;
+        left = 0;
+        right = nums.size()-1;
+
+        while(left < right)
+        {
+            mid = left + (right - left) / 2;
+            cout<<"mid "<<mid<<endl;
+            if( ((mid +1) < nums.size() )  && (nums[mid] < nums[mid + 1]) )
+            {
+                cout<<"mid "<<mid - 1<<endl;
+                left = mid + 1;
+            }
+            else if ( ((mid - 1) >= 0 ) && ( nums[mid] < nums[mid -1 ]) )
+            {
+                cout<<"mid "<<mid - 1<<endl;
+                right = mid - 1;
+            }
+            else
+            {
+                cout<<"mid "<<mid - 1<<endl;
+                return mid;
+            }
+        }
+
+        return left;
+    }
+};
