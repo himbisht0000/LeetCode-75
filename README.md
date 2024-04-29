@@ -31,7 +31,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/n-th-tribonacci-number/description/?envType=study-plan-v2&envId=leetcode-75"> N-th Tribonacci Number</a></li>
   <li> <a href = "https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=leetcode-75">House Robber</a></li>
   <li> <a href = "https://leetcode.com/problems/find-peak-element/description/?envType=study-plan-v2&envId=leetcode-75">Find Peak Element</a></li>
-  <li> <a href = "https://leetcode.com/problems/binary-tree-right-side-view/description/?envType=study-plan-v2&envId=leetcode-75">Find Peak Element</a></li>
+  <li> <a href = "https://leetcode.com/problems/binary-tree-right-side-view/description/?envType=study-plan-v2&envId=leetcode-75">Binary Tree Right Side View</a></li>
   
 
 
