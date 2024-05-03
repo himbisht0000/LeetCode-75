@@ -35,8 +35,6 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Level Sum of a Binary Tree</a></li>
   <li> <a href = "https://leetcode.com/problems/non-overlapping-intervals/description/?envType=study-plan-v2&envId=leetcode-75">Non Overlapping Interval</a></li>
   <li> <a href = "https://leetcode.com/problems/daily-temperatures/description/?envType=study-plan-v2&envId=leetcode-75">Daily Temperatures</a></li>
-  
-  
-
+  <li> <a href = "https://leetcode.com/problems/keys-and-rooms/description/?envType=study-plan-v2&envId=leetcode-75">Daily Temperatures</a></li>
 
 </ol>
