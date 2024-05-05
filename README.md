@@ -40,6 +40,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75">Reverse Vowel of a string</a></li>
   <li> <a href = "https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75">Is subsequence</a></li>
   <li> <a href = "https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan-v2&envId=leetcode-75">Find Pivot Index</a></li>
+  <li> <a href = "https://leetcode.com/problems/find-the-difference-of-two-arrays/description/?envType=study-plan-v2&envId=leetcode-75">Find the difference of two array/a></li>
+  
   
 
   
