@@ -43,7 +43,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=study-plan-v2&envId=leetcode-75">Unique number of occurences</a></li>
   <li> <a href = "https://leetcode.com/problems/equal-row-and-column-pairs/description/?envType=study-plan-v2&envId=leetcode-75">Equal Row and Column Pairs</a></li>
   <li> <a href = "https://leetcode.com/problems/decode-string/description/?envType=study-plan-v2&envId=leetcode-75">Decode String</a></li>
-  
+  <li> <a href = "https://leetcode.com/problems/number-of-recent-calls/description/?envType=study-plan-v2&envId=leetcode-75">Decode String</a></li>
+ 
  
   
   
