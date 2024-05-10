@@ -46,16 +46,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/number-of-recent-calls/description/?envType=study-plan-v2&envId=leetcode-75">Decode String</a></li>
   <li> <a href = "https://leetcode.com/problems/dota2-senate/submissions/1253633842/?envType=study-plan-v2&envId=leetcode-75">Dota2 Senate</a></li>
   <li> <a href = "https://leetcode.com/problems/reverse-linked-list/description/?envType=study-plan-v2&envId=leetcode-75">Reverse Linked List</a></li>
-  
-  
- 
- 
-  
-  
-  
-
-  
-  
+  <li> <a href = "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">LCA of Binary tree</a></li>
   
 
 </ol>
