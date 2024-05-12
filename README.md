@@ -48,6 +48,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/reverse-linked-list/description/?envType=study-plan-v2&envId=leetcode-75">Reverse Linked List</a></li>
   <li> <a href = "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75">LCA of Binary tree</a></li>
   <li> <a href = "https://leetcode.com/problems/delete-node-in-a-bst/description/?envType=study-plan-v2&envId=leetcode-75">Delete a Node in BST</a></li>
+  <li> <a href = "https://leetcode.com/problems/number-of-provinces/description/?envType=study-plan-v2&envId=leetcode-75">Number of Provinces</a></li>
+  
   
 
 </ol>
