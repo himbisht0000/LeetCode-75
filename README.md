@@ -51,7 +51,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/number-of-provinces/description/?envType=study-plan-v2&envId=leetcode-75">Number of Provinces</a></li>
   <li> <a href = "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/description/?envType=study-plan-v2&envId=leetcode-75">Reorder Routes to Make All Paths Lead to the City Zero</a></li>
   <li> <a href = "https://leetcode.com/problems/kth-largest-element-in-an-array/description/?envType=study-plan-v2&envId=leetcode-75">Kth Largest element in an array</a></li>
-  
+  <li> <a href = "https://leetcode.com/problems/smallest-number-in-infinite-set/description/?envType=study-plan-v2&envId=leetcode-75">Smallest number in infinite set</a></li>
   
   
   
