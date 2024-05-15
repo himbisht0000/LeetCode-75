@@ -53,5 +53,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/kth-largest-element-in-an-array/description/?envType=study-plan-v2&envId=leetcode-75">Kth Largest element in an array</a></li>
   <li> <a href = "https://leetcode.com/problems/smallest-number-in-infinite-set/description/?envType=study-plan-v2&envId=leetcode-75">Smallest number in infinite set</a></li>
   <li> <a href = "https://leetcode.com/problems/maximum-subsequence-score/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Subsequence score</a></li>
+  <li> <a href = "https://leetcode.com/problems/online-stock-span/description/?envType=study-plan-v2&envId=leetcode-75">Online Stock Span</a></li>
+  
   
 </ol>
