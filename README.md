@@ -56,7 +56,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/online-stock-span/description/?envType=study-plan-v2&envId=leetcode-75">Online Stock Span</a></li>
   <li> <a href = "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/?envType=study-plan-v2&envId=leetcode-75">Minimum Number of arrows to burst ballons</a></li>
   <li> <a href = "https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/?envType=study-plan-v2&envId=leetcode-75">Letter Combinations of a phone number</a></li>
-  <li> <a href = "https://leetcode.com/problems/combination-sum-iii/description/?envType=study-plan-v2&envId=leetcode-75">Letter Combinations of a phone number</a></li>
+  <li> <a href = "https://leetcode.com/problems/combination-sum-iii/description/?envType=study-plan-v2&envId=leetcode-75">Combination Sum 3</a></li>
  
   
   
