@@ -54,6 +54,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/smallest-number-in-infinite-set/description/?envType=study-plan-v2&envId=leetcode-75">Smallest number in infinite set</a></li>
   <li> <a href = "https://leetcode.com/problems/maximum-subsequence-score/description/?envType=study-plan-v2&envId=leetcode-75">Maximum Subsequence score</a></li>
   <li> <a href = "https://leetcode.com/problems/online-stock-span/description/?envType=study-plan-v2&envId=leetcode-75">Online Stock Span</a></li>
+  <li> <a href = "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/?envType=study-plan-v2&envId=leetcode-75">Minimum Number of arrows to burst ballons</a></li>
+  
   
   
 </ol>
