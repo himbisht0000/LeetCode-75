@@ -58,6 +58,8 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/?envType=study-plan-v2&envId=leetcode-75">Letter Combinations of a phone number</a></li>
   <li> <a href = "https://leetcode.com/problems/combination-sum-iii/description/?envType=study-plan-v2&envId=leetcode-75">Combination Sum 3</a></li>
   <li> <a href = "https://leetcode.com/problems/leaf-similar-trees/description/?envType=study-plan-v2&envId=leetcode-75">Leaf Similar Trees</a></li>
+  <li> <a href = "https://leetcode.com/problems/total-cost-to-hire-k-workers/?envType=study-plan-v2&envId=leetcode-75">Total Cost to hire K workers</a></li>
+  
   
  
   
