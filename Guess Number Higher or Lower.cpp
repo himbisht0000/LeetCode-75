@@ -7,8 +7,8 @@ public:
 
         while(left < right)
         {
+            // to avoid int overflow
             mid = left + ( right - left)/2;
-
             if(guess(mid) == -1){
                 right = mid - 1;
             }
