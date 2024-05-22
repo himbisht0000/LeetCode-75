@@ -61,6 +61,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/total-cost-to-hire-k-workers/?envType=study-plan-v2&envId=leetcode-75">Total Cost to hire K workers</a></li>
   <li> <a href = "https://leetcode.com/problems/koko-eating-bananas/description/?envType=study-plan-v2&envId=leetcode-75">Koko Eating Bananas</a></li>
   <li> <a href = "https://leetcode.com/problems/guess-number-higher-or-lower/description/?envType=study-plan-v2&envId=leetcode-75">Guess Number Higher or lower</a></li>
+  <li> <a href = "https://leetcode.com/problems/min-cost-climbing-stairs/description/?envType=study-plan-v2&envId=leetcode-75">Min Cost Climbing Stairs</a></li>
   
  
   
