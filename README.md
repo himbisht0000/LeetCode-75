@@ -64,14 +64,5 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/min-cost-climbing-stairs/description/?envType=study-plan-v2&envId=leetcode-75">Min Cost Climbing Stairs</a></li>
   <li> <a href = "https://leetcode.com/problems/unique-paths/submissions/1264943690/?envType=study-plan-v2&envId=leetcode-75">Unique Paths</a></li>
   <li> <a href = "https://leetcode.com/problems/longest-common-subsequence/description/?envType=study-plan-v2&envId=leetcode-75">Largest Common Subsequence</a></li>
-  
-  
-  
- 
-  
-  
- 
-  
-  
-  
+  <li> <a href = "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/?envType=study-plan-v2&envId=leetcode-75">Successful Pairs of Spells and Potions</a></li>
 </ol>
