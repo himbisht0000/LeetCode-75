@@ -67,5 +67,7 @@ LeetCode 75 Solutions
   <li> <a href = "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/?envType=study-plan-v2&envId=leetcode-75">Successful Pairs of Spells and Potions</a></li>
   <li> <a href = "https://leetcode.com/problems/edit-distance/submissions/1270547426/?envType=study-plan-v2&envId=leetcode-75">Edit Distance</a></li>
   <li> <a href = "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/">Best time to buy and sell stock with transaction fee </a></li>
+  <li> <a href = "https://leetcode.com/problems/path-sum-iii/description/?envType=study-plan-v2&envId=leetcode-75">Path Sum 3</a></li>
+ 
   
 </ol>
