@@ -3,49 +3,50 @@ public:
     vector<int> productExceptSelf(vector<int>& nums) {
         int product = 1;
         int zero_count = 0, zero_index = 0;
-        vector<int> ans(nums.size());
-        fill(ans.begin(), ans.end(), 0);
-
+        //output vector
+        vector<int> output(nums.size());
+        
+        //reset the output vector with value 0
+        fill(output.begin(), output.end(), 0);
+        
+        // find the number of zero in nums
         for(int i=0; i < nums.size() ;i++)
         {
             if(nums[i] == 0)
             {
+                // count zero
                 zero_count++;
                 zero_index = i;
+                // if count of zero is more than 1 then evry product will be zero
+                // simply return output vector as all elements are zero in it
                 if(zero_count > 1 )
                 {
-                    return ans;
+                    return output;
                 }
                 continue;
             }
 
-            if(i != 0)
+            //if(i != 0)
             product = nums[i] * product;
         }
-
+        
+        // if their is single zero in array then all values will be zero except index of zero 
         if(zero_count == 1)
         {
-            if(zero_index == 0)
-            ans[zero_index] = product;
-            else
-            ans[zero_index] = product * nums[0];
-            return ans;
+            output[zero_index] = product;
+            return output;
         }
+        
+        // traverse the nums vector and store the correct value in vector
         for(int i=0;i< nums.size();i++)
         {
-            if(i==0)
-            {
-                ans[i]=product;
-            }
+            //if current value is zero then we cannot perform division
+            if(nums[i] != 0 )
+                output[i] = product / nums[i];
             else
-            {
-                int value;
-                if(nums[i] != 0 )
-                value = product / nums[i];
-                ans[i] = value * nums[0];
-            }
+                output[i] = product;
         }
 
-        return ans;
+        return output;
     }
 };
