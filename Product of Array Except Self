@@ -1,52 +1,37 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        int product = 1;
-        int zero_count = 0, zero_index = 0;
+        
         //output vector
         vector<int> output(nums.size());
-        
-        //reset the output vector with value 0
-        fill(output.begin(), output.end(), 0);
-        
-        // find the number of zero in nums
-        for(int i=0; i < nums.size() ;i++)
-        {
-            if(nums[i] == 0)
-            {
-                // count zero
-                zero_count++;
-                zero_index = i;
-                // if count of zero is more than 1 then evry product will be zero
-                // simply return output vector as all elements are zero in it
-                if(zero_count > 1 )
-                {
-                    return output;
-                }
-                continue;
-            }
 
-            //if(i != 0)
-            product = nums[i] * product;
-        }
+        // vector to store prefix and suffix
+        // initialising all the elements of vector with one 
+        //beacause first and and last index of prefix and suffix will be one respectively 
+        vector<int> prefix(nums.size() , 1);
+        vector<int> suffix(nums.size() , 1);
         
-        // if their is single zero in array then all values will be zero except index of zero 
-        if(zero_count == 1)
+        //calcluate prefix
+        //prefix[i] = contains the product of all the elements before nums[i] ( nums[i] is not included )
+        for(int i = 1 ; i < prefix.size() ; i++)
         {
-            output[zero_index] = product;
-            return output;
+            prefix[i] = prefix[i - 1] * nums[i-1];
         }
-        
-        // traverse the nums vector and store the correct value in vector
-        for(int i=0;i< nums.size();i++)
+
+        //calcluate suffix
+        //suffix[i] = contains the product of all the elements after nums[i] ( nums[i] is not included )
+        for(int i = suffix.size()-2 ; i >=0 ; i--)
         {
-            //if current value is zero then we cannot perform division
-            if(nums[i] != 0 )
-                output[i] = product / nums[i];
-            else
-                output[i] = product;
+            suffix[i] = suffix[i + 1] * nums[i+1];
+        }
+
+        //store value in output vector
+        for(int i = 0 ; i < output.size(); i++)
+        {
+            output[i] = prefix[i] * suffix[i];
         }
 
         return output;
+
     }
 };
