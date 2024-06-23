@@ -10,16 +10,18 @@ public:
             //it should get consumed here only
             if(small_1 >= nums[i])
             {
+                // first box B1
                 small_1 = nums[i];
             }
             else if(small_2 >= nums[i])
-            {
+            {   // second box B2
                 small_2 = nums[i];
             }
             else 
             {
                 // if small_1 and small_2 already contain small value then 
                 // we have found the triplet
+                //last box B3
                 return true;
             }
         }
