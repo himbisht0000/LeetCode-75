@@ -1,38 +1,46 @@
 class Solution {
 public:
     string reverseWords(string s) {
+        //store the word in reverse order
         stack <char> st;
-        string ans;
+        //output
+        string output;
+
+        // traversing the string from end 
         for(int i = s.length() - 1 ; i >=0 ; i-- )
         {
             if(s[i]==' ') // skip the space
             {
+                // empty the stack and store word in answer
                 if( !st.empty() )
                 {
                     while( !st.empty() )
                     {
-                        ans+=st.top();
+                        output+=st.top();
                         st.pop();
                     }
-                    ans+=' ';
+                    output+=' ';
                 }
                 continue;
             }
-
+            // push non space character in stack
             st.push(s[i]);
         }
 
+        // check is stack has some work in it
+        // test case : "the sky is blue"
         while( !st.empty() )
         {
-            ans+=st.top();
+            output+=st.top();
             st.pop();
         }
-        if(ans[ans.length() - 1] == ' ')
+        // check if their is any space at the end of output string
+        // test case : " the sky is blue" -> "blue is sky the "
+        if(output[output.length() - 1] == ' ')
         {
-            ans.pop_back();
+            output.pop_back();
         }
 
-        return ans;
-
+        return output;
     }
 };
