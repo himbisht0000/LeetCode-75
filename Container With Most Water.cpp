@@ -23,7 +23,8 @@ public:
             }
         }
 
-
+        //we are only traversing the height array
+        //TC : O(n)
         return area;
 
     }
