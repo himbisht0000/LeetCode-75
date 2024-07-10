@@ -9,6 +9,7 @@ public:
 
         int xor_value = 0;
 
+        //Count the frequency of each element in both string
         for(int i=0; i < word1.length(); i++)
         {
             // store count of characters for word 1 in data1 map
@@ -32,10 +33,13 @@ public:
             }
 
         }
+        //Condition 1 : Size of map should be same
         if(data1.size() != data2.size())
         {
             return false;
         }
+
+        //Condition 2 : Each Element of map1 should be present in map2
         vector<int> count_1,count_2;
         for(auto i = data1.begin() ; i != data1.end() ; i++ )
         {
@@ -48,6 +52,7 @@ public:
             count_2.push_back(data2[i->first]);
         }
 
+        //Condition 3 : All the frequency value should be same 
         sort(count_1.begin(),count_1.end());
         sort(count_2.begin(),count_2.end());
         for(int i = 0 ; i < count_1.size() ;i++)
@@ -55,6 +60,8 @@ public:
             if(count_1[i] != count_2[i])
             return false;
         }
+
+        //TC : O(nlogn) n is the size of input string
         return true;
     }
 };
