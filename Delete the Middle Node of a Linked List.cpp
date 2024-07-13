@@ -17,13 +17,15 @@ public:
     ListNode* prev = NULL;
     prev = fast = slow = head;
 
+    // Traverse the linked list until fast is at NULL or last node
     while( fast != NULL && fast->next != NULL )
     {
         prev = slow;
-        slow = slow->next;
         fast = fast->next->next;
+        slow = slow->next;
     }
     
+    //update the link of node before middle node
     prev->next = slow->next;
     // if linked list has single element then
     if(slow == head)
@@ -32,6 +34,7 @@ public:
     }
     delete slow;
     
+    //Tc: O(N) N is the number of nodes in linked list
     return head;
     
     }
