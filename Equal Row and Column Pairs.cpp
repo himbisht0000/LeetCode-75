@@ -12,18 +12,22 @@ public:
             mp[grid[i]]++;
         }
 
+        // vector to store matrix column
         vector<int> col(grid.size());
 
+        // traverse the matrix and create column vector and check for pair
         for(int i = 0; i < grid[0].size();i++)
         {
             for(int j = 0; j < grid.size();j++)
             {
                 col[j] = grid[j][i];
             }
+            // check if current column has pair or not with other row
             if(mp.find(col) != mp.end())
             count += mp[col];
         }
-
+        
+        //TC: O( n * n) // traversing the whole matrix
         return count;
 
     }
