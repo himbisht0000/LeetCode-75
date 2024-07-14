@@ -2,9 +2,11 @@ class Solution {
 public:
     string removeStars(string s) {
         stack<char> st;
-        stack<char> temp;
+        
         int i = 0;
-        string ans;
+        string output;
+        
+        // traverse the string and remove star along with its left character
         for(i = 0 ; i < s.length(); i++)
         {
             if(s[i] != '*')
@@ -17,18 +19,17 @@ public:
             }
         }
 
+        // store remainning character in output
         while( !st.empty() )
         {
-            temp.push(st.top());
+            output+=st.top();
             st.pop();
         }
-        
-        while( !temp.empty() )
-        {
-            ans+=temp.top();
-            temp.pop();
-        }
 
-        return ans;
+        //reverse the string to get correct output
+        reverse(output.begin(), output.end());
+
+        //Tc: O(N) :  N is the size of input string
+        return output;
     }
 };
