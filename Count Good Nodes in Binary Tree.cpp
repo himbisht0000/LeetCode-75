@@ -32,7 +32,9 @@ public:
         int max = root->val;
         solve(root->left,&count,&max);
         solve(root->right,&count,&max);
-
+        
+        //root will always be good node so add 1 to our answer
+        //TC : O(N) where N is the number of node in binary tree
         return count + 1;
     }
 };
