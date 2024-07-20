@@ -13,7 +13,7 @@ class Solution {
 public:
     void solve (TreeNode* root , int *count, int max)
     {   
-        
+        //BAse condition
         if(root == NULL)
         return ;
         // if val of current node is more than max in its path then count it
@@ -24,15 +24,12 @@ public:
         }
         solve(root->left, count,max);
         solve(root->right,count, max);
-        // restore the old max value as ve are back tracking
         
     }
     int goodNodes(TreeNode* root) {
         int count  = 0;
         int max = root->val;
         solve(root,&count,max);
-        
-        //root will always be good node so add 1 to our answer
         //TC : O(N) where N is the number of node in binary tree
         return count ;
     }
